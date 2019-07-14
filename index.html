@@ -1,0 +1,92 @@
+<!------------------------------------------------------------------->
+<!-- .FILENAME                                                     -->
+<!--   index.html                                                  -->
+<!-- .WHAT                                                         -->
+<!--   Main HTML file for the NYT Search Application.              -->
+<!-- .DATE                                                         -->
+<!--   13-JUL-2019                                                 -->
+<!-- .AUTHOR                                                       -->
+<!--   thursday_squad @ UCF Bootcamp                               -->
+<!-- .NOTE                                                         -->
+<!--   User interface for the NYT Article Search App.              -->
+<!--   API calls are in the nytsearch.js file, and provide the     -->
+<!--   data displayed by this file.                                -->
+<!-- .TECHNOLOGIES USED                                            -->
+<!--   bootstrap, javascript, HTML                                 -->
+<!------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>NYT class exercise 16</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+   <!-- <div class = "container"> -->
+ <div class = "container">
+
+<!-- BEGIN JUMBOTRON -->
+   <div class="jumbotron text-center">
+       <h1 class="display-4">New York Times Search</h1>
+   </div>
+
+<!-- ** BEGIN INPUT FIELDS  -->
+  <form>
+<!-- Input field 1 -->
+       <div class = "form-group">
+       <label>Search term:</label>
+       <input id="search_terms" type="text" class="form-control" placeholder="Enter search terms. ">
+       </div>
+<!-- Input field 2 -->
+   <div class = "form-group">
+       <label>Number of records to retreive:</label>
+       <select class = "form-control">
+           <option value="option1">1</option>
+           <option value="option2">2</option>
+           <option value="option3">3</option>
+           <option value="option4">4</option>
+           <option value="option5">5</option>
+           <option value="option6">6</option>
+           <option value="option7">7</option>
+           <option value="option8">8</option>
+           <option value="option9">9</option>
+           <option value="option10">10</option>
+       </select>
+    </div>
+<!-- Input field 3 -->
+    <div class = "form-group">
+      <label>Start Year (Optional)</label>
+      <input type="text" class="form-control" placeholder="Year to start">
+    </div>
+<!-- Input field 4 -->
+    <div class = "form-group">
+      <label>End Year (Optional)</label>
+      <input type="text" class="form-control" placeholder="Year to end">
+    </div>
+   </form>
+<button id="submit_button" class="btn btn-default">Search</button>
+<a href="#" class="btn btn-default"></a>
+<button class="btn btn-default">Clear Results</button>
+<a href="#" class="btn btn-default"></a>
+
+<div class="row">
+    <div class="column">
+        <div id="article_list">
+            <!-- Articles will appear here -->
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/nytsearch.js"></script>    
+
+
+</body>
+
+</html>

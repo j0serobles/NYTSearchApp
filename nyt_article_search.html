@@ -1,0 +1,54 @@
+<!------------------------------------------------------------------->
+<!-- .FILENAME                                                     -->
+<!--   nyt_article_search.html                                     -->
+<!-- .WHAT                                                         -->
+<!--   Temporary html file for testing integration with javascript -->
+<!-- .DATE                                                         -->
+<!--   13-JUL-2019                                                 -->
+<!-- .AUTHOR                                                       -->
+<!--   thursday_squad @ UCF Bootcamp                               -->
+<!-- .NOTE                                                         -->
+<!--   This is just a sample HTML file for testing the NYT search  -->
+<!--   API calls in the nytsearch.js file (test harness)           -->
+<!------------------------------------------------------------------->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>New York Times Search</title>
+
+</head>
+
+<body>
+
+  <div>
+    <h1>The UI Team will take care of the front-end.  Go to the console.</h1>
+  </div>
+  <div>
+      <form>
+        Search Term:<br>
+        <input id="searchTerm" type="text" name="searchTerm" value="">
+        <br>
+        Number of Records to Retrieve:<br>
+        <input type="text" name="recordCount" value="">
+        <br>
+        Start Year:<br>
+        <input type="text" name="startYear" value="">
+        <br>
+        End Year:<br>
+        <input type="text" name="endYear" value="">
+        <br><br>
+        <input id="submit_button" type="submit" value="Submit">
+      </form> 
+      <div id="article_list"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript"></script>
+  <script type="text/javascript" src="javascript/nytsearch.js"></script>    
+  </script>
+</body>
+
+</html>
